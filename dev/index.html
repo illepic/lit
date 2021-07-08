@@ -6,8 +6,18 @@
     <title>&lt;my-element> Demo</title>
     <script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
     <script src="../node_modules/lit/polyfill-support.js"></script>
-    <script type="module" src="../my-element.js"></script>
+    <script type="module" src="../example-card.js"></script>
+    <script type="module" src="../flerp.js"></script>
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
     <style>
+      html {
+        --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1),
+          0 1px 2px 0 rgba(0, 0, 0, 0.06);
+        --tw-ring-offset-shadow: 0 0 #0000;
+        --tw-ring-shadow: 0 0 #0000;
+        background-color: rgb(180, 180, 180);
+      }
+
       p {
         border: solid 1px blue;
         padding: 8px;
@@ -15,8 +25,8 @@
     </style>
   </head>
   <body>
-    <my-element>
+    <example-card>
       <p>This is child content</p>
-    </my-element>
+    </example-card>
   </body>
 </html>

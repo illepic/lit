@@ -41,6 +41,7 @@ const it=(t,i)=>"method"===i.kind&&i.descriptor&&!("value"in i.descriptor)?{...i
       <button @click=${this._onClick} part="button">
         Click Count: ${this.count}
       </button>
+      <flerp-herp></flerp-herp>
       <slot></slot>
     `}_onClick(){this.count++}foo(){return"foo"}};ot.styles=((t,...i)=>{const s=i.reduce(((i,s,e)=>i+(t=>{if(t instanceof P)return t.cssText;if("number"==typeof t)return t;throw Error(`Value passed to 'css' function must be a 'css' function result: ${t}. Use 'unsafeCSS' to pass non-literal values, but\n            take care to ensure page security.`)})(s)+t[e+1]),t[0]);let e=I.get(s);return void 0===e&&I.set(s,e=new P(s,z)),e})`
     :host {

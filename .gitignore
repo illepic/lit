@@ -3,7 +3,11 @@ node_modules/
 /test/
 custom-elements.json
 # top level source
-my-element.js
-my-element.js.map
-my-element.d.ts
-my-element.d.ts.map
+example-card.js
+example-card.js.map
+example-card.d.ts
+example-card.d.ts.map
+flerp.js
+flerp.js.map
+flerp.d.ts
+flerp.d.ts.map
