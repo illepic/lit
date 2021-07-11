@@ -1,5 +1,5 @@
 {
-  "name": "@illepic/lit-starter-ts",
+  "name": "@illepic/lit",
   "version": "0.0.0",
   "description": "A simple web component",
   "main": "example-card.js",
