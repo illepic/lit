@@ -26,15 +26,21 @@
       ]
     },
     {
-      "name": "my-element",
-      "path": "./src/my-element.ts",
+      "name": "example-card",
+      "path": "./src/example-card.ts",
       "description": "An example element.",
       "attributes": [
         {
-          "name": "name",
-          "description": "The name to say \"Hello\" to.",
+          "name": "email",
+          "description": "Optional email",
           "type": "string",
-          "default": "\"World\""
+          "default": "\"hello@flerp.com\""
+        },
+        {
+          "name": "telephone",
+          "description": "Optional telephone",
+          "type": "string",
+          "default": "\"1-202-555-1111\""
         },
         {
           "name": "count",
@@ -45,11 +51,18 @@
       ],
       "properties": [
         {
-          "name": "name",
-          "attribute": "name",
-          "description": "The name to say \"Hello\" to.",
+          "name": "email",
+          "attribute": "email",
+          "description": "Optional email",
           "type": "string",
-          "default": "\"World\""
+          "default": "\"hello@flerp.com\""
+        },
+        {
+          "name": "telephone",
+          "attribute": "telephone",
+          "description": "Optional telephone",
+          "type": "string",
+          "default": "\"1-202-555-1111\""
         },
         {
           "name": "count",

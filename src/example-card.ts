@@ -5,7 +5,7 @@
  */
 
 import {LitElement, html, css} from 'lit';
-import {customElement, property} from 'lit/decorators.js';
+import {customElement, property} from 'lit/decorators';
 
 import './flerp';
 
@@ -192,6 +192,7 @@ export class ExampleCard extends LitElement {
             src="https://images.unsplash.com/photo-1534751516642-a1af1ef26a56?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60"
           />
           <h3 class="card__title">Courtney Henry</h3>
+          <!-- <flerp-herp></flerp-herp> -->
           <dl class="card__details">
             <dt class="sr-only">Title</dt>
             <dd class="card__details-title">Investor Factors Associate</dd>
@@ -245,10 +246,6 @@ export class ExampleCard extends LitElement {
       </div>
     `;
   }
-
-  // private _onClick() {
-  //   this.count++;
-  // }
 
   foo(): string {
     return 'foo';
