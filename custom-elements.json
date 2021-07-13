@@ -2,8 +2,9 @@
   "version": "experimental",
   "tags": [
     {
-      "name": "flerp-herp",
-      "path": "./src/flerp.ts",
+      "name": "example-pill",
+      "path": "./src/example-pill.ts",
+      "description": "A \"pill\" tag",
       "properties": [
         {
           "name": "renderRoot",
@@ -22,6 +23,18 @@
           "name": "updateComplete",
           "description": "Returns a Promise that resolves when the element has completed updating.\nThe Promise value is a boolean that is `true` if the element completed the\nupdate without triggering another update. The Promise result is `false` if\na property was set inside `updated()`. If the Promise is rejected, an\nexception was thrown during the update.\n\nTo await additional asynchronous work, override the `getUpdateComplete`\nmethod. For example, it is sometimes useful to await a rendered element\nbefore fulfilling this Promise. To do this, first await\n`super.getUpdateComplete()`, then any subsequent state.",
           "type": "Promise<boolean>"
+        }
+      ],
+      "slots": [
+        {
+          "name": "",
+          "description": "This element has a slot"
+        }
+      ],
+      "cssParts": [
+        {
+          "name": "pill",
+          "description": "The pill"
         }
       ]
     },

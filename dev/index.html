@@ -3,12 +3,21 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>&lt;my-element> Demo</title>
-    <script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
-    <script src="../node_modules/lit/polyfill-support.js"></script>
+    <title>example-card Demo</title>
+    <!-- Polyfills -->
+    <!-- <script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script> -->
+    <!-- <script src="../node_modules/lit/polyfill-support.js"></script> -->
 
-    <script type="module" src="../example-card.js"></script>
-    <!-- <script type="module" src="../flerp.js"></script> -->
+    <!-- Direct import of components -->
+    <!-- <script type="module" src="../example-card.js"></script> -->
+    <!-- <script type="module" src="../example-pill.js"></script> -->
+
+    <!-- Example dynamic loading of components -->
+    <script type="module">
+      if (document.querySelector('example-card')) {
+        import('../example-card.js');
+      }
+    </script>
 
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
     <style>
@@ -27,7 +36,7 @@
     </style>
   </head>
   <body>
-    <example-card>
+    <example-card email="flerp@derp.com" telephone="1-555-555-1234">
       <p>This is child content</p>
     </example-card>
   </body>
