@@ -9,13 +9,16 @@
     <!-- <script src="../node_modules/lit/polyfill-support.js"></script> -->
 
     <!-- Direct import of components -->
-    <!-- <script type="module" src="../example-card.js"></script> -->
-    <!-- <script type="module" src="../example-pill.js"></script> -->
+    <!-- <script type="module" src="../example-card.js"></script>
+    <script type="module" src="../example-pill.js"></script> -->
 
     <!-- Example dynamic loading of components -->
     <script type="module">
       if (document.querySelector('example-card')) {
         import('../example-card.js');
+      }
+      if (document.querySelector('example-pill')) {
+        import('../example-pill.js');
       }
     </script>
 
@@ -39,5 +42,6 @@
     <example-card email="flerp@derp.com" telephone="1-555-555-1234">
       <p>This is child content</p>
     </example-card>
+    <!-- <example-pill>Hello</example-pill> -->
   </body>
 </html>
